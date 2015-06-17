@@ -6,6 +6,11 @@
     exclude-result-prefixes="xs o"
     version="2.0">
     
+    <!-- 
+        This library serves as a place to collect the definition of named templates
+        and functions for the general use for processing hOCR.
+    -->
+    
     <!--
         $OCRHOffset: offset by how much the OCR is off on the horizontal axis.
                      This will be subtracted from the respective values of the

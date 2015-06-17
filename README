@@ -1,14 +1,19 @@
 This is a space to collect utilities to work with hOCR as specified in
 https://docs.google.com/document/d/1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0/preview?pli=1#
 
-Right now there is a simple transformation to ALTO which guesses <Illustration>s and
-<GraphicalElement>s
+Right now there is a simple transformation to ALTO which guesses
+<Illustration>s and <GraphicalElement>s
 
-When running from the command line saxon, please configure a system catalog.xml so that it does not request
-the dtd for every transformation from the w3c site. When running from one of the IDEs, this should
-generally already been catered for.
+When running from the command line saxon, please configure a system
+catalog.xml so that it does not request the dtd for every
+transformation from the w3c site. When running from one of the IDEs,
+this should generally already been catered for.
 
 The transformation hOCR2ALTO lives in xsl/hOCR2ALTO.xsl
+
+a sample call would be:
+
+$ saxon -s:<XMLFILE> xsl/hOCR2ALTO.xsl
 
 
 
